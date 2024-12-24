@@ -17,9 +17,10 @@ F(Fin)
 flowchart TD
     A(Inicio) --> B[n=1]
     B --> C[1<=n<1000]
-    C --> |Sí|D["print ((2* n) + 1)"]
+    C --> |Sí n%2 != 0|D["print n"]
     D --> E["n=n+1"]
     E --> C
+    C --> |Sí n%2 == 0|E 
     C --> |No|F[Fin]
 ```
 #### Numeros Pares
