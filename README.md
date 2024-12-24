@@ -42,7 +42,8 @@ flowchart TD
     C --> |Sí n%2==0|D["Print n"]
     D --> E["n=n-1"]
     E --> C
-    C--> |Sí n%2!=0|E
+    C --> |Sí n%2!=0|G["Print n-1"]
+    G --> C
     E -->|Sí n-1<2|F[Fin]
 ```
 
