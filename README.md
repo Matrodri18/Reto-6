@@ -16,7 +16,7 @@ F(Fin)
 ```mermaid
 flowchart TD
     A(Inicio) --> B[n=1]
-    B --> C[1<=n<1000]
+    B --> C[n<1000]
     C --> |Sí n%2 != 0|D["print n"]
     D --> E["n=n+1"]
     E --> C
